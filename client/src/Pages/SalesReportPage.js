@@ -8,9 +8,9 @@ const SalesReport = () => {
   useEffect(() => {
     // Fetch sales report from the backend
     axios
-      .get("http://localhost:5000/api/sales-report") // No need to call .json()
+      .get("http://localhost:5000/api/sales-report")
       .then((response) => {
-        setReportData(response.data); // Use response.data directly
+        setReportData(response.data);
         setLoading(false);
       })
       .catch((error) => {
